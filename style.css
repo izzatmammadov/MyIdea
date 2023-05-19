@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: rgb(30, 30, 30);
+}
+
 @font-face {
     font-family: pm;
     src: url(Fonts/Poppins-Medium.ttf);
@@ -127,6 +131,8 @@
 
 .navbar {
     background-color: rgb(30, 30, 30);
+    position: sticky;
+    top: 0;
 }
 
 .navbar ul {
@@ -149,5 +155,91 @@
     border-bottom: 2px solid #fff;
 }
 
+hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
 /* navbar end */
 
+.main_container {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main_content {
+    width: 90%;
+}
+
+.main_section {
+    clear: both;
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 4px solid;
+    border-image: -webkit-linear-gradient(left, #f96209, #818181)1;
+}
+
+.main_section:hover {
+    box-shadow: 0px 0px 15px 10px #f961095f;
+}
+
+ .main_section img {
+    float: left;
+    width: 60%;
+    height: 600px;
+    margin-right: 15px;
+ }
+
+ .main_section p {
+    text-align: justify;
+    font-family: pm;
+    color: #fff;
+ }
+
+ .main_section h2 {
+    display: inline;
+    color: #f96209;
+    font-size: 32px;
+    font-family: pm;
+ }
+
+ .main_section h3 {
+    display: inline;
+    color: #f96209;
+    font-size: 36px;
+    font-family: 'Reggae One', cursive;
+ }
+
+ .second_section {
+    clear: both;
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 4px solid;
+    border-image: -webkit-linear-gradient(left, #818181, #f96209)1;
+} 
+
+ .second_section img {
+    float: right;
+    width: 60%;
+    height: 600px;
+    margin-left: 15px;
+ }
+
+ .second_section p {
+    text-align: justify;
+    font-family: pm;
+    color: #fff;
+ }
+
+ .second_section h4 {
+    color: #f96209;
+    font-size: 32px;
+    font-family: pm;
+ }
+
+ .second_section:hover {
+    box-shadow: 0px 0px 15px 10px #f961095f;
+}
