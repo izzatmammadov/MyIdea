@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: pm;
+    src: url(Fonts/Poppins-Medium.ttf);
+}
+
+@keyframes title {
+    0% {
+        transform: rotate(none);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(none);
+    }
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #f96209, #818181);
+}
+
+.logo_content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo_content img {
+    height: 8vh;
+    border-radius: 50%;
+}
+
+.logo_content h1 {
+    font-family: 'Reggae One', cursive;
+    margin-left: 12px;
+    color: white;
+    font-size: 36px;
+}
+
+.logo_content h1:hover {
+    cursor: pointer;
+    animation-name: title;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+.button_groups {
+    display: flex;
+    flex-grow: 3;
+    font-family: pm;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.button_left_content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.button_left_content label {
+    font-size: 20px;
+    color: #fff;
+}
+
+.button_left_content input {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.303);
+    border: none;
+    border-bottom: 3px solid #fff;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 0px 10px;
+}
+
+.button_right_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.button_right_content p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.button_right_content a {
+    margin-left: 16px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f96209;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button_right_content a:hover {
+    background-color: #fff;
+    color: #f96209;
+    transition: .4s;
+}
+
+/* header end */
+
+.navbar {
+    background-color: rgb(30, 30, 30);
+}
+
+.navbar ul {
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.navbar a {
+    font-family: pm;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    color: #f96209;
+    border-bottom: 2px solid #fff;
+}
+
+/* navbar end */
+
