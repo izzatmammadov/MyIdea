@@ -6,6 +6,18 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+        width: 5px;
+      }
+          ::-webkit-scrollbar-track {
+        background: rgb(30, 30, 30);
+      }
+          ::-webkit-scrollbar-thumb {
+        background: #818181;
+      }
+          ::-webkit-scrollbar-thumb:hover {
+        background: rgb(30, 30, 30);
+      }
 }
 
 body {

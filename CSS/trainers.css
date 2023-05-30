@@ -6,6 +6,18 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+  width: 5px;
+}
+    ::-webkit-scrollbar-track {
+  background: rgb(30, 30, 30);
+}
+    ::-webkit-scrollbar-thumb {
+  background: #818181;
+}
+    ::-webkit-scrollbar-thumb:hover {
+  background: rgb(30, 30, 30);
+}
 }
 
 body {
@@ -32,6 +44,21 @@ body {
     }
     90% {
         transform: rotate(none);
+    }
+}
+
+@keyframes card {
+    0% {
+        transform: translateY(none);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(none);
     }
 }
 
@@ -163,91 +190,119 @@ hr {
 
 /* navbar end */
 
-.main_container {
+.trainers_main_container {
     margin: 25px auto;
+}
+
+.trainers_main_content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.trainer_section {
+    width: 24%;
+    margin: 0.5%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 8px;
+    border: 4px solid #818181;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #818181, #f96209);
+    cursor: pointer;
+    position: relative;
+}
+
+.trainer_section:hover {
+    animation-name: card;
+    animation-duration: 2s;
+    box-shadow: 0px 0px 15px 10px #f961095f;
+}
+
+.trainer_section:hover ul {
+    visibility: visible;
+}
+
+.trainer_section img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.trainers {
+    color: #fff;
+    font-size: 32px;
+    font-family: pm;
+    font-style: italic;
+}
+
+.trainer_section p {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    font-family: pm;
+}
+
+.trainer_section ul {
+    visibility: hidden;
+    width: 100%;
+    padding: 4px;
+    display: flex;
     justify-content: center;
+    gap: 80px;
+    position: absolute;
+    bottom: -38px;
 }
 
-.main_content {
-    width: 90%;
-}
-
-.main_section {
-    clear: both;
-    padding: 20px;
-    margin-bottom: 40px;
-    border: 4px solid;
-    border-image: -webkit-linear-gradient(left, #f96209, #818181)1;
-}
-
-.main_section:hover {
-    box-shadow: 0px 0px 15px 10px #f961095f;
-}
-
- .main_section img {
-    float: left;
-    width: 60%;
-    height: 600px;
-    margin-right: 15px;
- }
-
- .main_section p {
-    text-align: justify;
-    font-family: pm;
+.trainer_section ul a {
+    cursor: pointer;
+    font-size: 20px;
     color: #fff;
- }
-
- .main_section h2 {
-    display: inline;
-    color: #f96209;
-    font-size: 32px;
     font-family: pm;
- }
+    font-style: italic;
+    border-bottom: 3px solid #818181;
+}
 
- .main_section h3 {
-    display: inline;
-    color: #f96209;
-    font-size: 36px;
-    font-family: 'Reggae One', cursive;
- }
-
- .second_section {
-    clear: both;
-    padding: 20px;
-    margin-bottom: 40px;
-    border: 4px solid;
-    border-image: -webkit-linear-gradient(left, #818181, #f96209)1;
-} 
-
- .second_section img {
-    float: right;
-    width: 60%;
-    height: 600px;
-    margin-left: 15px;
- }
-
- .second_section p {
-    text-align: justify;
-    font-family: pm;
-    color: #fff;
- }
-
- .second_section h4 {
-    color: #f96209;
-    font-size: 32px;
-    font-family: pm;
- }
-
- .second_section:hover {
-    box-shadow: 0px 0px 15px 10px #f961095f;
+.trainer_section ul a:hover {
+    color: #818181;
 }
 
 hr {
     width: 90%;
     margin: 0 auto;
     border: 1px solid #fff;
+}
+
+.about_trainers {
+    width: 90%;
+    margin: 50px auto;
+    padding: 8px 18px;
+    border: 4px solid;
+    border-image: -webkit-linear-gradient(left, #f96209, #818181)1;
+}
+
+.about_trainers h6 {
+    color: #f96209;
+    font-size: 36px;
+    font-family: pm;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.about_trainers p {
+    margin-top: 14px;
+    color: #fff;
+    font-family: pm;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.about_trainers:hover {
+    box-shadow: 0px 0px 15px 10px #f961095f;
 }
 
 /* main content end */
