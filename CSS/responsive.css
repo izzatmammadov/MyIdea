@@ -1,0 +1,29 @@
+@media only screen and (max-width:600px) {
+    .header .button_groups {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        z-index: 9;
+        padding: 0px 14px;
+    }
+
+    .navbar ul {
+        justify-content: space-between;
+    }
+    
+    .footer .footer_right_container {
+        display: none;
+    }
+
+    .footer .footer_left_container {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+    .footer_left_container div {
+        width: 50%;
+        justify-content: start;
+    }
+}

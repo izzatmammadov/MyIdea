@@ -364,3 +364,36 @@ hr {
     font-size: 18px;
     line-height: 1.7;
 }
+
+@media only screen and (max-width:600px) {
+    .rooms_main_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rooms_main_section img {
+        width: 100%;
+    }
+
+    .rooms_second_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rooms_second_section img {
+        width: 100%;
+    }
+
+    .rooms_third_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .rooms_third_section img {
+        width: 100%;
+    }
+}

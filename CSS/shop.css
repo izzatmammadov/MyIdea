@@ -175,85 +175,140 @@ hr {
 
 /* navbar end */
 
-.main_container {
+.shop_main_container {
     margin: 25px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.main_content {
+.shop_main_content {
     width: 90%;
 }
 
-.main_section {
-    clear: both;
-    padding: 20px;
-    margin-bottom: 40px;
-    border: 4px solid;
-    border-image: -webkit-linear-gradient(left, #f96209, #818181)1;
-}
-
-.main_section:hover {
-    box-shadow: 0px 0px 15px 10px #f961095f;
-}
-
- .main_section img {
-    float: left;
-    width: 60%;
-    height: 600px;
-    margin-right: 15px;
- }
-
- .main_section p {
-    text-align: justify;
-    font-family: pm;
+.shop_main_section {
     color: #fff;
- }
+    text-align: center;
+    margin: 40px auto;
+}
 
- .main_section h2 {
-    display: inline;
-    color: #f96209;
-    font-size: 32px;
-    font-family: pm;
- }
-
- .main_section h3 {
-    display: inline;
-    color: #f96209;
-    font-size: 36px;
+.shop_main_section h2 {
     font-family: 'Reggae One', cursive;
- }
+    font-size: 32px;
+}
 
- .second_section {
-    clear: both;
-    padding: 20px;
-    margin-bottom: 40px;
+.shop_main_section p {
+    font-family: pm;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin: 18px auto;
+}
+
+.shop_main_section button {
+    font-size: 16px;
+    font-family: pm;
+    background-color: transparent;
+    border: none;
+    padding: 12px 36px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.shop_main_section button:hover {
+    cursor: pointer;
+    transition: 1.5s;
+    box-shadow: inset 20px 10px 0px 0px #fff;
+}
+
+.clothes_section {
     border: 4px solid;
-    border-image: -webkit-linear-gradient(left, #818181, #f96209)1;
-} 
+    border-image: -webkit-linear-gradient(top, #818181, #f96209)1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px;
+}
 
- .second_section img {
-    float: right;
-    width: 60%;
-    height: 600px;
-    margin-left: 15px;
- }
+.clothes_card {
+    background: linear-gradient(to right, #f96209, #818181);
+    width: 24%;
+    margin: 0.5%;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 8px;
+}
 
- .second_section p {
-    text-align: justify;
+.clothes_card:hover img {
+    filter: contrast(1.3);
+}
+
+.clothes_card img {
+    width: 100%;
+    border-radius: 8px
+}
+
+.clothes_card p {
+    font-family: pm;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.clothes_card button {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgb(30, 30, 30);
+    font-family: pm;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;    
+}
+
+.clothes_card button:hover {
+    transform: scale(.9);
+    cursor: pointer;
+    background-color: #000;
+}
+
+.size_div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: pm;
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+.pages_div {
+    /* background-color: red; */
+    display: flex;
+    gap: 18px;
+    margin: 18px auto;
+    font-size: 18px;
     font-family: pm;
     color: #fff;
- }
+    align-items: center;
+}
 
- .second_section h4 {
-    color: #f96209;
-    font-size: 32px;
+.pages_div button {
+    background-color: transparent;
+    color: #fff;
     font-family: pm;
- }
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 4px 18px;
+    border-radius: 8px;
+}
 
- .second_section:hover {
-    box-shadow: 0px 0px 15px 10px #f961095f;
+.pages_div button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: .4s;
 }
 
 hr {
@@ -311,4 +366,23 @@ hr {
     font-family: pm;
     font-size: 18px;
     line-height: 1.7;
+}
+
+@media only screen and (max-width:600px) {
+    .shop_main_section p {
+        text-align: justify;
+    }
+    
+    .clothes_section {
+        flex-direction: column;
+    }
+    
+    .clothes_card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .pages_div {
+        margin: 0 auto;
+    }
 }
